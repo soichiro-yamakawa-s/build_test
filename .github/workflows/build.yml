@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - aaa # メインブランチにプッシュされた場合、ビルドが実行されます
+      - main # メインブランチにプッシュされた場合、ビルドが実行されます
 
 jobs:
   build:
@@ -17,12 +17,21 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies dividends
+        run: npm install --prefix src/dividends
 
-      - name: Build Next.js application
-        run: npm run build
+      - name: Build Next.js dividends
+        run: npm run build --prefix src/dividends
       
-      - name: Export Next.js application
-        run: npm run export
+      - name: Export Next.js dividends
+        run: npm run export --prefix src/dividends
+      
+      - name: Install dependencies supplyChainView
+        run: npm install --prefix src/supplyChainView
+
+      - name: Build Next.js supplyChainView
+        run: npm run build --prefix src/supplyChainView
+      
+      - name: Export Next.js supplyChainView
+        run: npm run export --prefix src/supplyChainView
         
