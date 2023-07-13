@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   pull_request: # プルリクエストを作成した場合ビルドが実行されます
     branches:
-      - main
+      - develop
 
 jobs:
   build:
