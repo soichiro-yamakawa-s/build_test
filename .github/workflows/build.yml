@@ -21,5 +21,6 @@ jobs:
         run: npm install
 
       - name: Build Next.js application
-        run: npm run build && mv out/ build/
+        run: mkdir -p build_test/out
+             npm run build && mv out/ build/
 
