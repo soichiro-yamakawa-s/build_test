@@ -26,10 +26,3 @@ jobs:
       - name: Export Next.js application
         run: npm run export
         
-      - name: Commit and Push changes
-        run: |
-         git config --global user.name "soichiro-yamakawa-s"
-         git config --global user.email "soichiro.yamakawa.s@quick.jp"
-         git add ./out
-         git commit -m "Add build and export files"
-         git push --quiethttps://${{ secrets.GH_TOKEN }}@github.com/soichiro-yamakawa-s/build_test.git HEAD:main
