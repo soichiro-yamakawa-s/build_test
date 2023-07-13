@@ -22,6 +22,6 @@ jobs:
 
       - name: Build Next.js application
         run: |
-          mkdir -p outnpm run 
-          build && mv out/ build/
+          mkdir -p out
+          npm run build && mv out/ build/
 
