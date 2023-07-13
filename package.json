@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server.js",
     "build": "next build",
-    "export": "next export",
+    "export": "next export --outdir out",
     "gen": "node testdata_gen.js"
   },
   "author": "",
