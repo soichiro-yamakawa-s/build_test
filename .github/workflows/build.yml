@@ -21,5 +21,5 @@ jobs:
         run: npm install
 
       - name: Build Next.js application
-        run: npm run build
+        run: npm run build && mv out/ build/
 
