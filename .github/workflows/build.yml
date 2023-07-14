@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main # メインブランチにプッシュされた場合、ビルドが実行されます
+env:
+  CI: false
 
 jobs:
   build:
