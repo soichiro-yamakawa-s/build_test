@@ -1,0 +1,43 @@
+#header {
+	height: 34px;
+	min-width: 1000px;
+	min-height: 34px;
+	width: 100%;
+	font-size: 0.75em;
+	overflow: hidden;
+	background-color: #003b75;
+	z-index: 100;
+}
+#h_title {
+	position: relative;
+	height: 26px;
+	color: #ffffff;
+	margin: 5px 5px;
+}
+#h_service {
+	font-size: 1.5em;
+	height: 26px;
+	width: 490px;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#h_service img {
+	height: 100%;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+#h_links {
+	font-size: 0.9em;
+	margin: 0;
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+}
+#h_links input {
+	border-radius: 15px;
+}
+#btnHelp {
+    cursor: pointer;
+}

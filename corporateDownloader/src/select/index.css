@@ -1,0 +1,27 @@
+.margin-left {
+    margin-left: 20px;
+}
+
+#selected {
+    height: 40px;
+    border-radius: 4px;
+}
+
+select{
+    text-align: 10px;
+
+    padding-left: 4%;
+
+    font-size: 16px;
+
+    appearance:none;
+    
+    -moz-appearance:none;
+    
+    -webkit-appearance:none;
+
+    background: url(/public//down.png) no-repeat scroll right transparent;
+
+    background-size: 10px 6px;
+    background-position-x: 97%
+    }

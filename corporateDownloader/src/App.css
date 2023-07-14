@@ -1,0 +1,57 @@
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+body {
+    min-width: 1000px;
+    background-color: #eeeeee ;
+}
+
+input{
+    border-radius: 4px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.date-picker-ok {
+    padding-left: 6%;
+    height: 36px;
+    width: 120px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: grey solid 1px;
+}
+
+.date-picker-err {
+    padding-left: 6%;
+    height: 36px;
+    width: 120px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: red solid 2px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .css-7s2mzw-MuiGrid-root{
+        margin-top: -8px !important;
+    }
+    .css-hrxkpv{
+        margin-top: -8px !important;
+    }
+    input{
+        border-radius: 0% !important;
+    }
+    button{
+        border-radius: 0% !important;
+    }
+    select{
+        border-radius: 0% !important;
+    }
+    #codeAndName{
+        user-select: none;
+    }
+  }
