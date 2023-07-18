@@ -43,3 +43,9 @@ jobs:
       - name: Build Next.js corporateDownloader
         run: npm run build --prefix src/corporateDownloader
         
+      - name: Install dependencies searchReport
+        run: npm install --prefix src/searchReport
+
+      - name: Build Next.js searchReport
+        run: npm run build --prefix src/searchReport
+        
